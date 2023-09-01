@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: slategray;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+body {
+  background-color: blanchedalmond;
+  height: 100vh;
+  transition: 500ms;
+  padding: 10px;
+}
+
+.btn {
+  border: 2px solid;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 5px;
+  transition: 200ms;
+}
+.btn:active {
+  box-shadow: 0 2px;
+  scale: 0.9;
+}
+
+.theme-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 0;
+  right: 0;
+}
+.theme-btn svg {
+  width: 120%;
+  height: 120%;
+  fill: slategray;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landing .pro-pic {
+  width: 60%;
+  padding-top: 60%;
+  border: 2px solid;
+  border-radius: 50%;
+}
+.landing .start {
+  width: 50vw;
+  margin-top: 50px;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
