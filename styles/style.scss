@@ -1,13 +1,15 @@
-$light_color: slategray;
-$light_bg: blanchedalmond;
-$light_bg_2: white;
-$transition_time: 500ms;
+:root {
+    --light_color: #708090;
+    --light_bg: #ffebcd;
+    --light_bg_2: white;
+    --transition_time: 500ms;
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: $light_color;
+    color: var(--light_color);
     user-select: none;
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
@@ -16,14 +18,14 @@ $transition_time: 500ms;
 
 .btn {
     border: 3px solid;
-    border-radius: 10px;
-    background-color: $light_bg_2;
+    border-radius: 5px;
+    background-color: var(--light_bg_2);
     display: grid;
     place-items: center;
     margin: 10px;
     padding: 10px;
     box-shadow: 0 5px;
-    transition: $transition_time;
+    transition: var(--transition_time);
 
     &:active {
         box-shadow: 0 2px;
@@ -32,8 +34,8 @@ $transition_time: 500ms;
 }
 
 body {
-    background: $light_bg;
-    transition: $transition_time;
+    background: var(--light_bg);
+    transition: var(--transition_time);
 }
 
 nav {
@@ -48,7 +50,7 @@ nav {
         height: 40px;
 
         svg {
-            fill: $light_color;
+            fill: var(--light_color);
         }
     }
 
@@ -57,7 +59,7 @@ nav {
         height: 40px;
 
         svg {
-            fill: $light_color;
+            fill: var(--light_color);
         }
     }
 }

@@ -1,8 +1,15 @@
+:root {
+  --light_color: #708090;
+  --light_bg: #ffebcd;
+  --light_bg_2: white;
+  --transition_time: 500ms;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: slategray;
+  color: var(--light_color);
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -13,14 +20,14 @@
 
 .btn {
   border: 3px solid;
-  border-radius: 10px;
-  background-color: white;
+  border-radius: 5px;
+  background-color: var(--light_bg_2);
   display: grid;
   place-items: center;
   margin: 10px;
   padding: 10px;
   box-shadow: 0 5px;
-  transition: 500ms;
+  transition: var(--transition_time);
 }
 .btn:active {
   box-shadow: 0 2px;
@@ -28,8 +35,8 @@
 }
 
 body {
-  background: blanchedalmond;
-  transition: 500ms;
+  background: var(--light_bg);
+  transition: var(--transition_time);
 }
 
 nav {
@@ -44,14 +51,14 @@ nav .menu-btn {
   height: 40px;
 }
 nav .menu-btn svg {
-  fill: slategray;
+  fill: var(--light_color);
 }
 nav .theme-btn {
   width: 40px;
   height: 40px;
 }
 nav .theme-btn svg {
-  fill: slategray;
+  fill: var(--light_color);
 }
 
 .landing {
