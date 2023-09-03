@@ -58,7 +58,19 @@ nav .theme-btn {
   height: 40px;
 }
 nav .theme-btn svg {
-  fill: var(--light_color);
+  height: 200%;
+  stroke-width: 5px;
+  fill: none;
+}
+nav .theme-btn svg > * {
+  transition: all 1s ease;
+}
+nav .theme-btn svg #moon {
+  stroke: var(--light_color);
+}
+nav .theme-btn svg #sun {
+  stroke: var(--light_color);
+  transform: translateY(100%);
 }
 
 .landing {

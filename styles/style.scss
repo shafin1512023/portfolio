@@ -59,7 +59,22 @@ nav {
         height: 40px;
 
         svg {
-            fill: var(--light_color);
+            height: 200%;
+            stroke-width: 5px;
+            fill: none;
+
+            & > * {
+                transition: all 1s ease;
+            }
+
+            #moon {
+                stroke: var(--light_color);
+            }
+
+            #sun {
+                stroke: var(--light_color);
+                transform: translateY(100%);
+            }
         }
     }
 }
